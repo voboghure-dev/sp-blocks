@@ -1,0 +1,26 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "sp-blocks/slider",
+	"version": "0.1.0",
+	"title": "Slider",
+	"category": "media",
+	"icon": "slides",
+	"description": "Slider block from StorePress",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"imageCaption": {
+			"type": "string",
+			"default": "Slider image caption"
+	  	},
+		"imageSlide": {
+			"type": "string"
+		}
+	},
+	"textdomain": "sp-blocks",
+	"editorScript": "file:../../../build/index.js",
+	"editorStyle": "file:../../../build/index.css",
+	"style": "file:../../../build/style-index.css"
+}
