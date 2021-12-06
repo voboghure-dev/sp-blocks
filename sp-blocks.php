@@ -23,6 +23,7 @@
 function sp_blocks_init() {
 	$blocks = array(
 		'slider/',
+		'slides',
 	);
 
 	foreach( $blocks as $block ) {
