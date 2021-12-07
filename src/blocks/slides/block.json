@@ -13,10 +13,11 @@
 	"attributes": {
 		"imageCaption": {
 			"type": "string",
-			"default": "Slides image caption"
+			"default": "Slide image caption"
 	  	},
 		"imageSlide": {
-			"type": "string"
+			"type": "string",
+			"default": null
 		}
 	},
 	"textdomain": "sp-blocks",
