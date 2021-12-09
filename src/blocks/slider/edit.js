@@ -9,7 +9,13 @@ export default function Edit() {
 
 	return (
 		<div {...useBlockProps()}>
-			<InnerBlocks allowedBlocks={ALLOWED_BLOCKS} />
+			<InnerBlocks
+				template={ [
+					ALLOWED_BLOCKS,
+					ALLOWED_BLOCKS,
+					ALLOWED_BLOCKS,
+				] }
+				allowedBlocks={ALLOWED_BLOCKS} />
 		</div>
 	);
 }

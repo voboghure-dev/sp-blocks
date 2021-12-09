@@ -6,6 +6,7 @@ import {
 	useBlockProps,
 } from "@wordpress/block-editor";
 import { Panel, PanelBody, TextControl, Button } from "@wordpress/components";
+import { useEffect } from '@wordpress/element';
 
 import "./editor.scss";
 
@@ -14,7 +15,11 @@ import placeholder from './placeholder.png';
 export default function Edit({ attributes, setAttributes }) {
 	const { imageCaption, imageSlide } = attributes;
 	const ALLOWED_MEDIA_TYPES = ["image"];
-	setAttributes({ imageSlide: placeholder });
+
+	useEffect(() => {
+		setAttributes({ imageSlide: placeholder });
+	},[])
+
 	console.log(imageSlide);
 
 	return (
