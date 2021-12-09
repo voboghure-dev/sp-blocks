@@ -34,9 +34,9 @@ export default function Edit({ attributes, setAttributes }) {
 						icon="format-gallery"
 					>
 						<MediaUpload
-							onSelect={(imageSlide) =>
-								setAttributes({ imageSlide: imageSlide.sizes.full.url })
-							}
+							onSelect={(uploadImage) => {
+								setAttributes({ imageSlide: uploadImage.sizes.full.url });
+							}}
 							allowedTypes={ALLOWED_MEDIA_TYPES}
 							value={imageSlide}
 							render={({ open }) => (
