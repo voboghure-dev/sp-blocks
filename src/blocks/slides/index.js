@@ -9,6 +9,7 @@ import metadata from "./block.json";
 const { name, ...settings } = metadata;
 
 // console.log(settings);
+// "parent": [ "sp-blocks/slider" ],
 
 registerBlockType(name, {
 	...settings,

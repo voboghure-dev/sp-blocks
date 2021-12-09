@@ -9,9 +9,13 @@ import { Panel, PanelBody, TextControl, Button } from "@wordpress/components";
 
 import "./editor.scss";
 
+import placeholder from './placeholder.png';
+
 export default function Edit({ attributes, setAttributes }) {
 	const { imageCaption, imageSlide } = attributes;
 	const ALLOWED_MEDIA_TYPES = ["image"];
+	setAttributes({ imageSlide: placeholder });
+	console.log(imageSlide);
 
 	return (
 		<>
