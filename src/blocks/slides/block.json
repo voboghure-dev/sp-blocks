@@ -5,7 +5,7 @@
 	"version": "0.1.0",
 	"title": "Slides",
 	"category": "media",
-
+	"parent": [ "sp-blocks/slider" ],
 	"icon": "images-alt",
 	"description": "Slides block from StorePress",
 	"supports": {

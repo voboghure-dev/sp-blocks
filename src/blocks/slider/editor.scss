@@ -4,6 +4,17 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-.wp-block-sp-blocks-slider {
-	border: 1px dotted #f00;
+// .wp-block-sp-blocks-slider {
+// 	border: 1px dotted #f00;
+// }
+
+:root {
+	--width: 800px;
+	--per-item: 4;
+	--position: 0px;
+}
+
+.container {
+	width: var(--width);
+	margin: auto;
 }

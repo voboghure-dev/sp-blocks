@@ -20,7 +20,7 @@ export default function Edit({ attributes, setAttributes }) {
 		setAttributes({ imageSlide: placeholder });
 	},[])
 
-	console.log(imageSlide);
+	// console.log(imageSlide);
 
 	return (
 		<>
@@ -62,12 +62,14 @@ export default function Edit({ attributes, setAttributes }) {
 				</Panel>
 			</InspectorControls>
 
-			<div {...useBlockProps()}>
+			{/* <div {...useBlockProps()}>
 				<div className="slide-image">
 					<img src={imageSlide} />
 				</div>
 				<div className="slide-caption">{imageCaption}</div>
-			</div>
+			</div> */}
+
+			<li {...useBlockProps()}><img src={imageSlide} alt={imageCaption} />{imageCaption}</li>
 		</>
 	);
 }
