@@ -8,8 +8,6 @@ import save from "./save";
 import metadata from "./block.json";
 const { name, ...settings } = metadata;
 
-// console.log(settings);
-
 registerBlockType(name, {
 	...settings,
 

@@ -18,14 +18,15 @@ export default function Edit() {
 								ALLOWED_BLOCKS,
 								ALLOWED_BLOCKS,
 							] }
+							orientation="horizontal"
 							allowedBlocks={ALLOWED_BLOCKS}
 						/>
 					</ul>
 				</div>
 
-				<div class="slider-control">
-					<a href="#" class="prev">Prev</a>
-					<a href="#" class="next">Next</a>
+				<div className="slider-control">
+					<a href="#" className="prev">Prev</a>
+					<a href="#" className="next">Next</a>
 				</div>
 			</div>
 		</div>

@@ -9,7 +9,8 @@
 	"icon": "images-alt",
 	"description": "Slides block from StorePress",
 	"supports": {
-		"html": false
+		"html": false,
+		"className": false
 	},
 	"attributes": {
 		"imageCaption": {

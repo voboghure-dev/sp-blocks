@@ -31,3 +31,17 @@ function sp_blocks_init() {
 	}
 }
 add_action( 'init', 'sp_blocks_init' );
+
+function sp_blocks_enqueue_if_block_is_present(){
+
+    if ( has_block( 'sp-blocks/slider' ) ) {
+        wp_enqueue_script(
+            'sp_blocks_script',
+            plugins_url( 'sp-blocks.js', __FILE__ ),
+            array(),
+            '1.0.0',
+            true
+        );
+    }
+}
+add_action( 'enqueue_block_assets', 'sp_blocks_enqueue_if_block_is_present' );

@@ -7,11 +7,11 @@ export default function save({ attributes, setAttributes }) {
 	const { imageCaption, imageSlide } = attributes;
 
 	return (
-		<div {...blockProps}>
-			<div className="slide-image">
-				<img src={imageSlide} />
-			</div>
-			<div className="slide-caption">{imageCaption}</div>
-		</div>
+		<>
+			<li {...blockProps}>
+				<img src={imageSlide} alt={imageSlide} />
+				{imageCaption}
+			</li>
+		</>
 	);
 }
