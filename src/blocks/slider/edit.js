@@ -11,7 +11,7 @@ export default function Edit() {
 		<div {...useBlockProps()} className="container">
 			<div className="slider">
 				<div className="slider-wrapper">
-					<ul>
+					<ul className="slider-ul">
 						<InnerBlocks
 							template={ [
 								ALLOWED_BLOCKS,

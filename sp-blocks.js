@@ -7,7 +7,7 @@ sliders.forEach((slider, index) => {
   let next = control.querySelector(".next");
   let ul = wrapper.querySelector("ul");
   let li = ul.querySelectorAll("li");
-console.log(next);
+
   let wrapperWidth = wrapper.clientWidth; // 800
   let itemWidth = li[0].clientWidth; //200
   let totalItem = li.length; // 11
@@ -18,7 +18,6 @@ console.log(next);
 
   prev.addEventListener("click", (event) => {
     let currentOffset = itemWidth * position;
-	console.log(event);
 
     if (wrapperWidth >= currentOffset) {
       return;

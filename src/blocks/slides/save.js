@@ -9,8 +9,8 @@ export default function save({ attributes, setAttributes }) {
 	return (
 		<>
 			<li {...blockProps}>
-				<img src={imageSlide} alt={imageSlide} />
-				{imageCaption}
+				<a href=""><img src={imageSlide} alt={imageSlide} />
+				{imageCaption}</a>
 			</li>
 		</>
 	);

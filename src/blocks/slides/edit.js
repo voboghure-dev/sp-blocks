@@ -62,7 +62,7 @@ export default function Edit({ attributes, setAttributes }) {
 				</Panel>
 			</InspectorControls>
 
-			<li {...useBlockProps()}><img src={imageSlide} alt={imageCaption} />{imageCaption}</li>
+			<li {...useBlockProps()}><a href="#"><img src={imageSlide} alt={imageCaption} />{imageCaption}</a></li>
 		</>
 	);
 }
