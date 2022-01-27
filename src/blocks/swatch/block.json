@@ -1,0 +1,29 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "sp-blocks/swatch",
+	"version": "0.1.0",
+	"title": "Swatch",
+	"category": "media",
+	"parent": [ "@woocommerce/all-products" ],
+	"icon": "images-alt",
+	"description": "Swatch block from StorePress",
+	"supports": {
+		"html": false,
+		"className": false
+	},
+	"attributes": {
+		"imageCaption": {
+			"type": "string",
+			"default": "Slide image caption"
+	  	},
+		"imageSlide": {
+			"type": "string",
+			"default": null
+		}
+	},
+	"textdomain": "sp-blocks",
+	"editorScript": "file:../../../build/swatch.js",
+	"editorStyle": "file:../../../build/swatch.css",
+	"style": "file:../../../build/style-swatch.css"
+}
